@@ -1,0 +1,23 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earmix/node-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/earmix/node-express/issues"
+  },
+  "homepage": "https://github.com/earmix/node-express#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
