@@ -1,10 +1,11 @@
 {
   "name": "node-express",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "node ./src",
+    "serve": "nodemon ./src"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,17 @@
   },
   "homepage": "https://github.com/earmix/node-express#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.13",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }
