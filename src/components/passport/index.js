@@ -2,6 +2,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const Users = require('../../models/users');
 
+// Find a user in the user database.
 const findUser = async (username, password, done) => {
   try {
     // User credentials query.

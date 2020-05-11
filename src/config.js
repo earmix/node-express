@@ -1,5 +1,12 @@
+//Require dotenv
+require('dotenv').config()
+
 // Place environment variables here...
-exports.DB = process.env.DB || 'this_is_the_db_conn_string';
-exports.mongoUri = process.env.MONGO_URI || 'mongodb+srv://earmacatulad:5unM1cr0@dotx2db-40mvv.mongodb.net/identity-api?retryWrites=true&w=majority'
-exports.jwtSecret = process.env.JWT_TOKEN || 'this_is_the_jwt_token';
-exports.APP_NAME = 'NODE-EXPRESS';
+const variables = {
+  mongoUri:  process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/test',
+  jwtSecret: process.env.JWT_TOKEN || 'this_is_the_jwt_token',
+  appName: 'ExpressJS'
+}
+
+// Export variable to other components
+module.exports = variables;

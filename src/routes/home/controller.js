@@ -1,7 +1,7 @@
-const { APP_NAME } = require('../../config');
+const { appName } = require('../../config');
 
 exports.main = (req, res) => {
-  res.status(200).send(APP_NAME);
+  res.status(200).send(appName);
 }
 
 exports.about = (req, res) => {
